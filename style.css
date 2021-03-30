@@ -1,0 +1,80 @@
+
+main {
+    padding: 20px 0;
+  }
+  
+  section {
+    margin-bottom: 100px;
+  }
+  
+  main h1 {
+    margin: 0 10px;
+    border-bottom: 1px solid gray;
+  }
+  
+  main h2 {
+    margin: 12px 10px;
+    border-bottom: 1px solid lightgray;
+  }
+  
+  fieldset {
+      padding-left: 10px;
+      border-radius: 10px;
+      border-color:rgb(75, 75, 75);
+      box-shadow: 5px 5px 5px rgb(75, 75, 75);
+  }
+  
+  .group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+    
+  }
+  
+  .item {
+    flex: 1;
+    margin: 10px;
+    
+  }
+
+  legend {
+    background-color: black;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    color: white;
+  }
+  
+  form input, 
+  form textarea {
+    width: 99%;
+    margin-bottom: 20px;
+    padding-left:5px;
+  }
+  
+  form textarea {
+    height: 160px;
+    resize: vertical;
+  }
+
+  ::placeholder {
+    color: rgba(0, 0, 0, 0.1)
+  }
+
+  @media all and (min-width: 800px) {
+    section {
+      padding: 0 10%;
+    }
+    .group {
+      flex-direction: row;
+    }
+
+    fieldset {
+      padding-left: 20px;
+    }
+
+    form textarea {
+      height: 160px;
+      resize: none;
+    }
+  }
+  
